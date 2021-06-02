@@ -17,6 +17,17 @@ from django.dispatch import receiver
 # Create your models here.
 
 
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        Profile.objects.create(user=instance)
+
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.profile.save()
+
+
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     phone_number = models.CharField(max_length=12)
@@ -37,7 +48,7 @@ class Category(models.Model):
 
     @property
     def get_valid_url_for_products(self):
-        return reverse('products') + '?' + 'category' + '=' + str(self.slug)
+        return reverse('products') + '?category=' + str(self.slug)
 
     def save(self, *args, **kwargs):
         from django.template import defaultfilters
@@ -78,7 +89,6 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse('specific_product_url_with_slug', args=(self.slug,))
 
-    # Переопределяем стандартный метод из Model.Чтобы автоматически записывался slug из title.
     def save(self, *args, **kwargs):
         from django.template import defaultfilters
         from unidecode import unidecode
@@ -91,11 +101,65 @@ class Product(models.Model):
 
 
 @receiver(post_save, sender=User)
-def create_user_profile(sender, instance, created, **kwargs):
+def create_user_wallet(sender, instance, created, **kwargs):
     if created:
-        Profile.objects.create(user=instance)
+        our_wallet = Wallet.objects.create(user=instance)
+        if instance.is_superuser:
+            our_wallet.set_balance(Wallet.max_balance)
+            our_wallet.save()
 
 
 @receiver(post_save, sender=User)
-def save_user_profile(sender, instance, **kwargs):
-    instance.profile.save()
+def save_user_wallet(sender, instance, **kwargs):
+    if instance.is_superuser:
+        instance.wallet.set_balance(Wallet.max_balance)
+    instance.wallet.save()
+
+
+class Wallet(models.Model):  # Добавить текста об ошибке !!!!
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    balance = models.DecimalField(max_digits=9, decimal_places=2, default=0)
+
+    max_balance = 9999999.99
+    min_balance = 0.0
+
+    def refresh_superuser_balance(self):
+        if self.user.is_superuser:
+            self.balance = self.max_balance
+            self.save()
+
+    def get_balance(self):
+        return str(self.balance) + '$'
+
+    def deposit(self, amount):
+        self.balance += amount
+        suc = 'Баланс пополнен'
+        self.refresh_superuser_balance()
+        self.save()
+
+    def set_balance(self, value):
+        if value <= self.max_balance and value >= self.min_balance:
+            self.balance = value
+        else:
+            raise Exception('Balance was not set')
+        self.refresh_superuser_balance()
+        self.save()
+        suc = 'Balance was set !'
+        return suc
+
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+            message = 'Withdraw success!'
+        else:
+            message = 'Not enough money!'
+            raise Exception(message)
+
+        self.refresh_superuser_balance()
+        self.save()
+        return message
+
+    def __str__(self):
+        return self.user.username + '_wallet'
+
+
