@@ -12,6 +12,10 @@ def get_about_us_page(request):
     return render(request, "main/about_us.html", {})
 
 
+def get_login_page(request):
+    return render(request, "main/login.html", {})
+
+
 def get_products_page(request):
     # Обрабатываю параметры строки запроса с именем "category".
     chosen_category = request.GET.get("category", "")
