@@ -37,7 +37,7 @@ class Category(models.Model):
 
     @property
     def get_valid_url_for_products(self):
-        return reverse('products_url') + '?' + 'category' + '=' + str(self.slug)
+        return reverse('products') + '?' + 'category' + '=' + str(self.slug)
 
     def save(self, *args, **kwargs):
         from django.template import defaultfilters

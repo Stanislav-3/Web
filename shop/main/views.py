@@ -25,6 +25,19 @@ def get_products_page(request):
     return render(request, "main/products.html", {'products': products, 'category':chosen_category})
 
 
+def get_specific_product(request, slug):
+    pass
+#     product = Product.objects.get(slug=slug)
+#     # Collect statistics from user.
+#     if request.user.is_authenticated:
+#         StatisticsItem.add_click(user=request.user, product=product)
+#
+#     cart_product_form = CartAddProductForm()
+#     context = {'product': product,
+#                'cart_product_form': cart_product_form}
+#     return render(request, 'first_app/specific_product.html', context)
+
+
 def get_categories(request):
     categories = Category.objects.all()
     return render(request, "main/categories.html", {'categories': categories})
