@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>{% block title %}Default title:){% endblock title %}</title>
+    <title>{% block title %}Green store{% endblock title %}</title>
 </head>
 
 <body style="display:flex; flex-direction:column; min-height: 100%">
@@ -65,11 +65,11 @@
             text-align: center;
             min-width: 100px;
             font-size: medium;
-            font-family: cursive;
+            font-family: times fantasy;
         }
         .header_element:hover {
             background-color: rgb(255, 255, 255);
-            border: 3px dotted black;
+            border: 1px dashed black;
         }
         .hello_user:hover {
             text-decoration: underline;
@@ -77,7 +77,7 @@
         .precontent_stuff {
             margin-bottom: 20px;
             padding-top: 1px;
-            border-bottom: 5px dotted blue;
+            border-bottom: 1px dashed #020205;
         }
         .my_main_content {
             flex: 1;
@@ -109,8 +109,8 @@
         const showPopup = () => {
             let currentTime = Date.now()
             let spentTime = (currentTime - enterTime) / 1000
-            let message = `Вы провели на сайте минут: ${Math.floor(spentTime / 60)},
-                           секунд: ${Math.floor(spentTime % 60)}`;
+            let message = `<b>Time spent:</b><br>
+                           Minutes: ${Math.floor(spentTime / 60)}, seconds: ${Math.floor(spentTime % 60)}`;
             document.getElementById('current_date_time_block').innerHTML = message;
 
         }
@@ -122,7 +122,7 @@
         <header style="display: block; height:100px">
             <div style="background-color: cornsilk;">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand">My web-site !</a>
+                    <a class="navbar-brand"> Green &#x1F332</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -130,30 +130,30 @@
                         <ul class="navbar-nav mr-auto">
                             <div class="header_element">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/categories">Categories</a>
+                                    <a class="nav-link" href="{% url 'categories' %}">Categories</a>
                                 </li>
                             </div>
                             <div class="header_element">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/products">Products</a>
-                                </li>
-                            </div>
-                        </ul>
-                        <ul class="navbar-nav mr-auto">
-                            <div class="header_element">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/admin">Login (admin)</a>
+                                    <a class="nav-link" href="{% url 'products' %}">Products</a>
                                 </li>
                             </div>
                         </ul>
                         <ul class="navbar-nav">
-                            {% if user.is_authenticated %}
-                                <div class="hello_user">
-                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px">
-                                        <a class="nav-link" href="{% url 'user_profile_url' %}">Hello {{ user.username }}! ({{ user.wallet.get_balance }})</a>
-                                    </li>
-                                </div>
-                            {% endif %}
+                            <div class="header_element">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="admin/">Login as admin</a>
+                                </li>
+                            </div>
+                        </ul>
+{#                        <ul class="navbar-nav">#}
+{#                            {% if user.is_authenticated %}#}
+{#                                <div class="hello_user">#}
+{#                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px">#}
+{#                                        <a class="nav-link" href="{% url 'user_profile_url' %}">Hello {{ user.username }}! ({{ user.wallet.get_balance }})</a>#}
+{#                                    </li>#}
+{#                                </div>#}
+{#                            {% endif %}#}
                             <!-- Cart stuff here -->
 {#                            {% with total_items=cart|length %}#}
 {#                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px;">#}
@@ -206,12 +206,6 @@
             {% endfor %}
         {% endif %}
 
-        <h1>
-            <div id="current_date_time_block" class="nav-item" style="height: 20px; width: 200px; font-size: 16px"></div>
-            {% block header %}
-            {% endblock header %}
-        </h1>
-
         <div class="container">
             <div class="main-body">
                 <!-- PRE-PRODUCT CONTENT -->
@@ -249,14 +243,20 @@
             </div>
 
             <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-2">
                 <b>Useful links</b>
               </h6>
               <p>
-                <a href="#!" class="text-reset">About-us</a>
+                <a href="{% url 'about' %}" class="text-reset">About-us</a>
               </p>
+                <!-- Timer -->
+                <p>
+                    <div id="current_date_time_block" class="nav-item" style="font-size: 16px"></div>
+                    {% block header %}
+                    {% endblock header %}
+                </p>
             </div>
             <!-- Grid column -->
 

@@ -16,12 +16,12 @@ from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 # Create your models here.
 
+
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     phone_number = models.CharField(max_length=12)
     address = models.CharField(max_length=50)
-
-    email_is_verifyed = models.BooleanField(default=False)
+    email_is_verified = models.BooleanField(default=False)
 
     def get_full_name(self):
         return str(self.user.first_name) + ' ' + str(self.user.last_name)
@@ -31,7 +31,6 @@ class Profile(models.Model):
 
 
 class Category(models.Model):
-
     title = models.CharField(max_length=50, verbose_name="title")
     image = models.ImageField(verbose_name="Изображение", default="default_img.jpg") # default Берётся из папки /media/
     slug = models.SlugField(default='', editable=False, max_length=50, unique=True)
@@ -45,8 +44,7 @@ class Category(models.Model):
         from unidecode import unidecode
 
         value = self.title
-        # Предусматриваем преобразование из Unicode в ASCII.
-        self.slug = defaultfilters.slugify(unidecode(value),) # there was also " allow_unicode=True"
+        self.slug = defaultfilters.slugify(unidecode(value),)
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -55,14 +53,16 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = "Categories"
 
+
 def validate_amount_of_product(value):
-    if value > 1000:
-        raise ValidationError('Amount could not be bigger than 1000')
+    max_value = 1000
+    if value > max_value:
+        raise ValidationError(f'Amount could not be bigger than {max_value}')
     else:
         return value
 
+
 class Product(models.Model):
-    # the name of product field.
     title = models.CharField('Name', max_length=50)
     description = models.TextField('Description', max_length=255, default="Some description ...")
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
@@ -89,10 +89,12 @@ class Product(models.Model):
     def __str__(self):
         return self.title
 
+
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         Profile.objects.create(user=instance)
+
 
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
