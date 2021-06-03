@@ -93,26 +93,10 @@ class Product(models.Model):
         from django.template import defaultfilters
         from unidecode import unidecode
 
-        self.slug = defaultfilters.slugify(unidecode(self.title),) # there was also " allow_unicode=True"
+        self.slug = defaultfilters.slugify(unidecode(self.title),)
         super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
-
-
-# @receiver(post_save, sender=User)
-# def create_user_wallet(sender, instance, created, **kwargs):
-#     if created:
-#         our_wallet = Wallet.objects.create(user=instance)
-#         if instance.is_superuser:
-#             our_wallet.set_balance(Wallet.max_balance)
-#             our_wallet.save()
-#
-#
-# @receiver(post_save, sender=User)
-# def save_user_wallet(sender, instance, **kwargs):
-#     if instance.is_superuser:
-#         instance.wallet.set_balance(Wallet.max_balance)
-#     instance.wallet.save()
 
 

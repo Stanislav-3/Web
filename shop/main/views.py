@@ -1,7 +1,9 @@
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
+
+from cart.forms import CartAddProductForm
 from main.models import Product, Category
 from .forms import UserForm, ProfileForm
 from .models import Profile
@@ -18,6 +20,21 @@ def get_about_us_page(request):
     return render(request, "main/about_us.html", {})
 
 
+def get_user_profile_page(request):
+    user = request.user
+
+    return render(request, 'main/user_profile.html', {"user": user})
+
+
+def logout_user(request):
+    user = request.user
+
+    if user.is_authenticated:
+        logout(request)
+
+    return redirect('main')
+
+
 def get_products_page(request):
     # Обрабатываю параметры строки запроса с именем "category".
     chosen_category = request.GET.get("category", "")
@@ -32,16 +49,10 @@ def get_products_page(request):
 
 
 def get_specific_product(request, slug):
-    pass
-#     product = Product.objects.get(slug=slug)
-#     # Collect statistics from user.
-#     if request.user.is_authenticated:
-#         StatisticsItem.add_click(user=request.user, product=product)
-#
-#     cart_product_form = CartAddProductForm()
-#     context = {'product': product,
-#                'cart_product_form': cart_product_form}
-#     return render(request, 'first_app/specific_product.html', context)
+    product = Product.objects.get(slug=slug)
+    cart_product_form = CartAddProductForm()
+    context = {'product': product, 'cart_product_form': cart_product_form}
+    return render(request, 'main/product.html', context)
 
 
 def get_categories(request):

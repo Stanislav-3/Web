@@ -157,25 +157,25 @@
                             {% if user.is_authenticated %}
                                 <div class="hello_user">
                                     <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px">
-                                        <a class="nav-link" href="">Hello, {{ user.username }}</a>
+                                        <a class="nav-link" href="{% url 'profile' %}">Hello, {{ user.username }}</a>
                                     </li>
                                 </div>
                             {% endif %}
                             <!-- Cart stuff here -->
-{#                            {% with total_items=cart|length %}#}
-{#                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px;">#}
-{#                                        <a class="nav-link" href="{% url 'cart:cart_detail' %}">#}
-{#                                            <div class="cart_header">#}
-{#                                                {% if total_items > 0 %}#}
-{#                                                    Your cart: {{ total_items }} item{{ total_items|pluralize }},#}
-{#                                                     ${{ cart.get_total_price }}#}
-{#                                                {% else %}#}
-{#                                                     Your cart is empty.#}
-{#                                                {% endif %}#}
-{#                                            </div>#}
-{#                                        </a>#}
-{#                                    </li>#}
-{#                            {% endwith %}#}
+                            {% with total_items=cart|length %}
+                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px;">
+                                        <a class="nav-link" href="{% url 'cart:cart_detail' %}">
+                                            <div class="cart_header">
+                                                {% if total_items > 0 %}
+                                                    Your cart: {{ total_items }} item{{ total_items|pluralize }},
+                                                     ${{ cart.get_total_price }}
+                                                {% else %}
+                                                     Your cart is empty.
+                                                {% endif %}
+                                            </div>
+                                        </a>
+                                    </li>
+                            {% endwith %}
 {#                            {% if not user.is_authenticated %}#}
 {#                                <div class="header_element">#}
 {#                                    <li class="nav-item">#}
@@ -208,7 +208,7 @@
                 <div class="{{ message.tags }}">
                     {{ message|safe }}
                 </div>
-                <button type="button" id="button--close-button">Lol</button>
+{#                <button type="button" id="button--close-button">smth</button>#}
             </div>
             {% endfor %}
         {% endif %}
