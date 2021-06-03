@@ -153,14 +153,14 @@
                                 </li>
                             </div>
                         </ul>
-{#                        <ul class="navbar-nav">#}
-{#                            {% if user.is_authenticated %}#}
-{#                                <div class="hello_user">#}
+                        <ul class="navbar-nav">
+                            {% if user.is_authenticated %}
+                                <div class="hello_user">
 {#                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px">#}
 {#                                        <a class="nav-link" href="{% url 'user_profile_url' %}">Hello {{ user.username }}! ({{ user.wallet.get_balance }})</a>#}
 {#                                    </li>#}
-{#                                </div>#}
-{#                            {% endif %}#}
+                                </div>
+                            {% endif %}
                             <!-- Cart stuff here -->
 {#                            {% with total_items=cart|length %}#}
 {#                                    <li class="nav-item" style="font-family: cursive; font-size:medium; text-align:center; padding-top:2px;">#}
@@ -201,7 +201,7 @@
             </div>
         </header>
 
-        <!-- Сообщения разные -->
+        <!-- Сообщения -->
         {% if messages %}
             {% for message in messages %}
             <div class="message">

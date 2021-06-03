@@ -10,5 +10,6 @@ urlpatterns = [
 
     path('categories/', views.get_categories, name='categories'),
 
-    path('login/', views.get_login_page, name='login')
+    path('login/', views.get_login_page, name='login'),
+    path('registration/', views.get_registration_page, name='registration')
 ]

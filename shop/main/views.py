@@ -1,6 +1,12 @@
-from django.shortcuts import render
+from django.contrib import messages
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
+from django.shortcuts import render, redirect
 from main.models import Product, Category
-
+from .forms import UserForm, ProfileForm
+from .models import Profile
+import logging
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 
@@ -10,10 +16,6 @@ def get_main_page(request):
 
 def get_about_us_page(request):
     return render(request, "main/about_us.html", {})
-
-
-def get_login_page(request):
-    return render(request, "main/login.html", {})
 
 
 def get_products_page(request):
@@ -45,3 +47,57 @@ def get_specific_product(request, slug):
 def get_categories(request):
     categories = Category.objects.all()
     return render(request, "main/categories.html", {'categories': categories})
+
+
+# user stuff
+def get_login_page(request):
+    if (request.method == 'POST'):
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        try:
+            user = User.objects.get(username=username)
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('categories')
+            else:
+                messages.info(request, 'Username or password is not correct')
+                return render(request, 'main/login.html', {})
+        except Exception as e:
+            messages.error(request, 'No such user')
+            logger.info('Wrong input')
+            return redirect('login')
+    else:
+        return render(request, 'main/login.html', {})
+
+
+def get_registration_page(request):
+    if request.method == "POST":
+        user_form = UserForm(request.POST)
+        profile_form = ProfileForm(request.POST)
+
+        # Проверяем есть ли уже пользователь с таким адресом почты.
+        email = request.POST.get('email')
+        if User.objects.filter(email=email).exists():
+            messages.error(request, 'This email already registred on site.')
+            return redirect('registration')
+
+        if User.objects.filter(username=request.POST.get('username')).exists():
+            messages.error(request, 'This username already registred on site.')
+            return redirect('registration')
+
+        if user_form.is_valid() and profile_form.is_valid():
+            new_user = user_form.save()
+            profile_test = Profile.objects.get(user=new_user)
+            profile_test.phone_number = profile_form.cleaned_data.get('phone_number', '')
+            profile_test.address = profile_form.cleaned_data.get('address', '')
+            profile_test.save()
+            return redirect('login')
+        else:
+            messages.error(request, 'Your data is incorrect')
+            return redirect('registration')
+
+    elif request.method == "GET":
+        user_form = UserForm()
+        profile_form = ProfileForm()
+    return render(request, 'main/registration.html', {'form': user_form, 'profile_form': profile_form})
