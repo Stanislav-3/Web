@@ -78,10 +78,6 @@ def get_registration_page(request):
 
         # Проверяем есть ли уже пользователь с таким адресом почты.
         email = request.POST.get('email')
-        if User.objects.filter(email=email).exists():
-            messages.error(request, 'This email already registred on site.')
-            return redirect('registration')
-
         if User.objects.filter(username=request.POST.get('username')).exists():
             messages.error(request, 'This username already registred on site.')
             return redirect('registration')

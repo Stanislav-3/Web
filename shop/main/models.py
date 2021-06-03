@@ -30,8 +30,8 @@ def save_user_profile(sender, instance, **kwargs):
 
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    phone_number = models.CharField(max_length=12)
-    address = models.CharField(max_length=50)
+    phone_number = models.CharField(max_length=12, null=True, blank=True)
+    address = models.CharField(max_length=50, null=True, blank=True)
     email_is_verified = models.BooleanField(default=False)
 
     def get_full_name(self):
