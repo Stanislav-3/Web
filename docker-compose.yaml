@@ -10,7 +10,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
   web:
-    build: .
+    image: stanislav3/web-app
     command: bash -c "
        python ./shop/manage.py makemigrations &&
        python ./shop/manage.py migrate &&
