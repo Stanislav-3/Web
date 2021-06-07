@@ -7,8 +7,6 @@ from django.urls import reverse
 from django.utils.text import slugify
 from django.contrib import messages
 import datetime
-
-# Используем _("Hello") например, и если язык устаановлен в русский то выдаст "Привет" вроде бы.
 from django.utils.translation import ugettext as _
 from django.core.validators import RegexValidator
 
@@ -79,7 +77,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=1)
     price = models.DecimalField(max_digits=9, decimal_places=2, default=99.99)
     amount = models.PositiveIntegerField(default=5, validators=[validate_amount_of_product])
-    image = models.ImageField(verbose_name="Изображение", default="default_img.jpg") # default Берётся из папки /media/
+    image = models.ImageField(verbose_name="Image", default="default_img.jpg")
     slug = models.SlugField(default='', editable=False, max_length=50, unique=True)
 
     @property

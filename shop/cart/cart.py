@@ -4,7 +4,6 @@ from main.models import Product
 
 
 class Cart(object):
-
     def __init__(self, request):
         """
         Инициализируем корзину

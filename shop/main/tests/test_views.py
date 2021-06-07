@@ -28,17 +28,18 @@ class Test():
         assert response.status_code == 200
         assertTemplateUsed(client.get(path), html_file)
 
-    # def test_with_slug(self):
-    #     product_slug = 'Some_random_slug'
-    #
-    #     product = mixer.blend('main.Product', slug = product_slug, category = mixer.blend('main.Category'))
-    #     path = reverse('specific_product_url_with_slug', kwargs={'slug': product_slug})
-    #
-    #     request = RequestFactory().get(path)
-    #     SessionMiddleware().process_request(request)
-        # response = views.get_specific_product(request, product_slug)
-        #
-        # assert response.status_code == 200
+    def test_with_slug(self):
+        product_slug = 'Some_random_slug'
+
+        product = mixer.blend('main.Product', title = product_slug, category = mixer.blend('main.Category'))
+        product.save()
+        path = reverse('specific_product_url_with_slug', kwargs={'slug': product_slug.lower()})
+
+        request = RequestFactory().get(path)
+        SessionMiddleware().process_request(request)
+        response = views.get_specific_product(request, product_slug.lower())
+        product.delete()
+        assert response.status_code == 200
 
 
 @pytest.fixture

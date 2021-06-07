@@ -5,36 +5,26 @@ from django.contrib import messages
 from cart.cart import Cart
 
 
-
 def order_create(request):
-    # 1) Берем текущую карзину или создаем пустую если её нет.
+    # 1) Get/create a cart
     cart = Cart(request)
-
-    # 2) Обрабатываем данные полученные от пользователя.
     if request.method == "POST":
-
-        # 3) Передаём данные из запроса в форму.
+        # 2) Validate request
         form = OrderCreateForm(request.POST)
-
-        # 4) Валидируем форму.
         if form.is_valid():
-            # 5) Сохраняем "чистые" данные.
+            # 3) Save
             order = form.save(commit=False)
             if request.user.is_authenticated:
                 cd = form.cleaned_data
                 order.user = request.user
             order.save()
-
-            # 6) Перемещаем все элементы из текущей карзины 
-            #    в элементы заказа
+            # 4) Move products to order items
             for item in cart:
                 OrderItem.objects.create(order=order,
                                          product=item['product'],
                                          price=item['price'],
                                          quantity=item['quantity'])
-
-            # 7) Очищаем карзину от всех продуктов.
-            #    т.к. они уже в заказе.
+            # 5) Remove products from cart
             cart.clear()
 
             messages.success(request, 'Success: Order added')
@@ -51,9 +41,6 @@ def order_create(request):
 
 
 def order_specific(request, order_id):
-    '''
-    Даже аноним сможет получить эту информацию
-    '''
     order = get_object_or_404(Order, id=order_id)
     order_items = OrderItem.objects.filter(order=order)
     context = {'order': order, 'order_items': order_items}
@@ -62,9 +49,6 @@ def order_specific(request, order_id):
 
 
 def order_all(request):
-    '''
-    Даже аноним сможет получить эту информацию
-    '''    
     orders = Order.objects.filter(user=request.user)                
 
     context = {'orders': orders}
