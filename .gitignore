@@ -3,4 +3,6 @@
 */.idea
 */venv
 */debug.log
+*/.coverage
+*/.pytest_cache
 */*/__pycache__

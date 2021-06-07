@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import my_config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,20 +78,14 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-DATABASES_NAME = 'web'
-DATABASES_USER = 'postgres'
-DATABASES_PASSWORD = 'MyPassword'
-DATABASES_HOST = 'localhost'
-DATABASES_PORT = '5432'
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': DATABASES_NAME,
-        'USER': DATABASES_USER,
-        'PASSWORD': DATABASES_PASSWORD,
-        'HOST': DATABASES_HOST,
-        'PORT': DATABASES_PORT,
+        'NAME': my_config.DATABASES_NAME,
+        'USER': my_config.DATABASES_USER,
+        'PASSWORD': my_config.DATABASES_PASSWORD,
+        'HOST': my_config.DATABASES_HOST,
+        'PORT': my_config.DATABASES_PORT,
     }
 }
 

@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 
 # Create your views here.
 
+
 def get_main_page(request):
     return render(request, "main/main.html", {})
 
@@ -36,7 +37,6 @@ def logout_user(request):
 
 
 def get_products_page(request):
-    # Обрабатываю параметры строки запроса с именем "category".
     chosen_category = request.GET.get("category", "")
 
     products = None

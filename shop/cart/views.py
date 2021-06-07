@@ -30,9 +30,6 @@ def cart_remove(request, product_id):
     return redirect('cart:cart_detail')
 
 
-'''
-Также обрабатывает купон.
-'''
 def cart_detail(request): 
     cart = Cart(request)
 

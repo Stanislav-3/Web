@@ -1,0 +1,5 @@
+DATABASES_NAME = 'postgres'
+DATABASES_USER = 'postgres'
+DATABASES_PASSWORD = 'postgres'
+DATABASES_HOST = 'db'
+DATABASES_PORT = '5432'

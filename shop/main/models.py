@@ -43,7 +43,7 @@ class Profile(models.Model):
 
 class Category(models.Model):
     title = models.CharField(max_length=50, verbose_name="title")
-    image = models.ImageField(verbose_name="Изображение", default="default_img.jpg") # default Берётся из папки /media/
+    image = models.ImageField(verbose_name="Image", default="default.jpg")
     slug = models.SlugField(default='', editable=False, max_length=50, unique=True)
 
     @property

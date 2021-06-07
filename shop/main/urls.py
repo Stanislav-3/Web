@@ -15,6 +15,6 @@ urlpatterns = [
     path('login/', views.get_login_page, name='login'),
     re_path(r'^cart/', include(('cart.urls', 'cart'), namespace='cart')),
     re_path(r'^orders/', include(('orders.urls', 'orders'), namespace='orders')),
-    path('logout/', views.logout_user, name="logout_user"),
-    path('user-profile/', views.get_user_profile_page, name="profile")
+    path('logout/', views.logout_user, name='logout_user'),
+    path('user-profile/', views.get_user_profile_page, name='profile')
 ]
