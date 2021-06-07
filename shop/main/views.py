@@ -7,6 +7,7 @@ from cart.forms import CartAddProductForm
 from main.models import Product, Category
 from .forms import UserForm, ProfileForm
 from .models import Profile
+from concurrent.futures import ThreadPoolExecutor
 import logging
 logger = logging.getLogger(__name__)
 
@@ -63,8 +64,13 @@ def get_categories(request):
 # user stuff
 def get_login_page(request):
     if (request.method == 'POST'):
-        username = request.POST.get('username')
-        password = request.POST.get('password')
+        with ThreadPoolExecutor() as executor:
+            username_thread = executor.submit(request.POST.get, 'username')
+            password_thread = executor.submit(request.POST.get, 'password')
+
+            username = username_thread.result()
+            password = password_thread.result()
+
         try:
             user = User.objects.get(username=username)
             user = authenticate(request, username=username, password=password)
@@ -84,8 +90,12 @@ def get_login_page(request):
 
 def get_registration_page(request):
     if request.method == "POST":
-        user_form = UserForm(request.POST)
-        profile_form = ProfileForm(request.POST)
+        with ThreadPoolExecutor() as executor:
+            username_thread = executor.submit(UserForm, request.POST)
+            password_thread = executor.submit(ProfileForm, request.POST)
+
+            user_form = username_thread.result()
+            profile_form = password_thread.result()
 
         # Проверяем есть ли уже пользователь с таким адресом почты.
         email = request.POST.get('email')
