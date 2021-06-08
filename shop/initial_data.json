@@ -351,6 +351,253 @@
     }
   },
   {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2021-06-07T19:55:24.917Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "Stan",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2021-06-07T19:55:24.925Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "abc",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2021-06-07T19:55:24.926Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "asd",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2021-06-08T05:28:54.307Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "ProductRewards object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2021-06-08T05:29:00.430Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "ProductRewards object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2021-06-08T05:29:05.177Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "ProductRewards object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2021-06-08T05:29:10.861Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "ProductRewards object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2021-06-08T05:34:47.871Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "15",
+      "object_repr": "test_product",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2021-06-08T05:35:48.562Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "15",
+      "object_repr": "test_product",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2021-06-08T05:37:01.259Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "16",
+      "object_repr": "new",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2021-06-08T05:53:38.554Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "16",
+      "object_repr": "new",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2021-06-08T05:53:50.221Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Pineapple",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2021-06-08T05:53:57.730Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "Salad",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2021-06-08T05:54:07.733Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "Buckwheat",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2021-06-08T05:55:30.539Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "Banana",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2021-06-08T05:55:38.189Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Doughnut",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2021-06-08T05:59:24.368Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Milk",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2021-06-08T06:00:02.964Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "11",
+      "object_repr": "Beef",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2021-06-08T08:43:08.674Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "Admin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -783,11 +1030,83 @@
     }
   },
   {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add order item rewards",
+      "content_type": 13,
+      "codename": "add_orderitemrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change order item rewards",
+      "content_type": 13,
+      "codename": "change_orderitemrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete order item rewards",
+      "content_type": 13,
+      "codename": "delete_orderitemrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view order item rewards",
+      "content_type": 13,
+      "codename": "view_orderitemrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add product rewards",
+      "content_type": 13,
+      "codename": "add_productrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change product rewards",
+      "content_type": 13,
+      "codename": "change_productrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete product rewards",
+      "content_type": 13,
+      "codename": "delete_productrewards"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view product rewards",
+      "content_type": 13,
+      "codename": "view_productrewards"
+    }
+  },
+  {
     "model": "auth.user",
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$216000$betiFGzjkUd2$w2dhnC8t3YpfZFUmy05VfhHLueI6O59dLfjJhs6Hkf4=",
-      "last_login": "2021-06-03T06:55:58.781Z",
+      "last_login": "2021-06-08T07:52:33.605Z",
       "is_superuser": true,
       "username": "Stanislav",
       "first_name": "",
@@ -796,62 +1115,26 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2021-06-01T13:40:14.785Z",
-      "groups": [ ],
-      "user_permissions": [ ]
+      "groups": [],
+      "user_permissions": []
     }
   },
   {
     "model": "auth.user",
-    "pk": 2,
+    "pk": 5,
     "fields": {
-      "password": "pbkdf2_sha256$216000$8Hpj4PAzax7o$WArIiQF9Ugv/hqFy7edBNTaTdfBVCa47eAE6NIyPdzU=",
-      "last_login": "2021-06-03T15:28:45.104Z",
-      "is_superuser": false,
-      "username": "Stan",
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2021-06-03T06:56:56.660Z",
-      "groups": [ ],
-      "user_permissions": [ ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 3,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$Qv2Vp2CyNG1r$qwhNsohgBAnGA+qwyIL6iFCHYzRbq//u3KTWZiuOzzg=",
+      "password": "pbkdf2_sha256$216000$PpzD6QTEHbLS$wIB0+CnE6CIWW+ycp2kT6UW59hix66wA0s4mMy7ihKw=",
       "last_login": null,
       "is_superuser": false,
-      "username": "abc",
+      "username": "Admin",
       "first_name": "",
       "last_name": "",
       "email": "",
       "is_staff": false,
       "is_active": true,
-      "date_joined": "2021-06-03T10:52:48.106Z",
-      "groups": [ ],
-      "user_permissions": [ ]
-    }
-  },
-  {
-    "model": "auth.user",
-    "pk": 4,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$9vYaNYW4Gn5M$c5BFXL67MXwdQZ68vJtBXOEBiB9UGq1iDKtMqrQQZxw=",
-      "last_login": "2021-06-03T15:27:49.815Z",
-      "is_superuser": false,
-      "username": "asd",
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2021-06-03T10:54:34.885Z",
-      "groups": [ ],
-      "user_permissions": [ ]
+      "date_joined": "2021-06-08T08:43:08.557Z",
+      "groups": [],
+      "user_permissions": []
     }
   },
   {
@@ -951,6 +1234,14 @@
     }
   },
   {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "main",
+      "model": "productrewards"
+    }
+  },
+  {
     "model": "sessions.session",
     "pk": "0n2raskc2lqkgt0q1d9iwgv7cxv510nb",
     "fields": {
@@ -1012,6 +1303,14 @@
     "fields": {
       "session_data": "e30:1lohAP:P72Y0AJ2N1G_grD6URVCbWC0eCfzRBmg09ZwXL1O0mo",
       "expire_date": "2021-06-17T06:49:21.173Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "lx5k9ue3imc3r6o2sbs1brd8va2ee8u3",
+    "fields": {
+      "session_data": ".eJxVjEEOgyAQRe_CuiGIAuKy-56BzAxDtW0wEVwZ715NXLTb_95_mwiw1jGshZcwRTGIRtx-NwR6cz5BfEF-zpLmXJcJ5anIixb5mCN_7pf7FxihjMdbgyNsU8TGsLPgIlnnrO-NtqiVYsWmTeh14k55wh7okKlJnTYusrJHlGCpYtj2_Qs3sDuw:1lqXgX:LN3v4y9Amj2dLmQgBJzRWVzaE4BSDUjrmP_h_LY1YZU",
+      "expire_date": "2021-06-22T09:06:09.770Z"
     }
   },
   {
@@ -1082,19 +1381,9 @@
   },
   {
     "model": "main.profile",
-    "pk": 2,
+    "pk": 5,
     "fields": {
-      "user": 2,
-      "phone_number": "",
-      "address": "",
-      "email_is_verified": false
-    }
-  },
-  {
-    "model": "main.profile",
-    "pk": 4,
-    "fields": {
-      "user": 4,
+      "user": 5,
       "phone_number": null,
       "address": null,
       "email_is_verified": false
@@ -1164,6 +1453,34 @@
     }
   },
   {
+    "model": "main.productrewards",
+    "pk": 1,
+    "fields": {
+      "tag": "2018-best"
+    }
+  },
+  {
+    "model": "main.productrewards",
+    "pk": 2,
+    "fields": {
+      "tag": "2019-best"
+    }
+  },
+  {
+    "model": "main.productrewards",
+    "pk": 3,
+    "fields": {
+      "tag": "2020-best"
+    }
+  },
+  {
+    "model": "main.productrewards",
+    "pk": 4,
+    "fields": {
+      "tag": "2021-best"
+    }
+  },
+  {
     "model": "main.product",
     "pk": 1,
     "fields": {
@@ -1173,7 +1490,8 @@
       "price": "6.99",
       "amount": 12,
       "image": "Cheese.jpeg",
-      "slug": "cheese"
+      "slug": "cheese",
+      "rewards": []
     }
   },
   {
@@ -1186,7 +1504,11 @@
       "price": "4.99",
       "amount": 12,
       "image": "Milk.jpg",
-      "slug": "milk"
+      "slug": "milk",
+      "rewards": [
+        2,
+        4
+      ]
     }
   },
   {
@@ -1199,7 +1521,10 @@
       "price": "2.99",
       "amount": 11,
       "image": "Doughnut.jpg",
-      "slug": "doughnut"
+      "slug": "doughnut",
+      "rewards": [
+        1
+      ]
     }
   },
   {
@@ -1212,7 +1537,8 @@
       "price": "1.99",
       "amount": 15,
       "image": "Biscuits.jpg",
-      "slug": "biscuits"
+      "slug": "biscuits",
+      "rewards": []
     }
   },
   {
@@ -1225,7 +1551,11 @@
       "price": "0.99",
       "amount": 7,
       "image": "Banana.jpg",
-      "slug": "banana"
+      "slug": "banana",
+      "rewards": [
+        1,
+        2
+      ]
     }
   },
   {
@@ -1238,7 +1568,11 @@
       "price": "1.50",
       "amount": 6,
       "image": "Pineapple.jpg",
-      "slug": "pineapple"
+      "slug": "pineapple",
+      "rewards": [
+        1,
+        3
+      ]
     }
   },
   {
@@ -1251,7 +1585,13 @@
       "price": "2.30",
       "amount": 11,
       "image": "Buckwheat.jpg",
-      "slug": "buckwheat"
+      "slug": "buckwheat",
+      "rewards": [
+        1,
+        2,
+        3,
+        4
+      ]
     }
   },
   {
@@ -1264,7 +1604,8 @@
       "price": "2.00",
       "amount": 6,
       "image": "Rice.jpg",
-      "slug": "rice"
+      "slug": "rice",
+      "rewards": []
     }
   },
   {
@@ -1277,7 +1618,8 @@
       "price": "4.80",
       "amount": 6,
       "image": "Pizza.jpg",
-      "slug": "pizza"
+      "slug": "pizza",
+      "rewards": []
     }
   },
   {
@@ -1290,7 +1632,10 @@
       "price": "6.50",
       "amount": 6,
       "image": "Salad.jpg",
-      "slug": "salad"
+      "slug": "salad",
+      "rewards": [
+        1
+      ]
     }
   },
   {
@@ -1303,7 +1648,10 @@
       "price": "5.60",
       "amount": 8,
       "image": "Beef.jpg",
-      "slug": "beef"
+      "slug": "beef",
+      "rewards": [
+        4
+      ]
     }
   },
   {
@@ -1316,7 +1664,8 @@
       "price": "6.40",
       "amount": 7,
       "image": "Pork.jpg",
-      "slug": "pork"
+      "slug": "pork",
+      "rewards": []
     }
   },
   {
@@ -1329,7 +1678,8 @@
       "price": "4.00",
       "amount": 21,
       "image": "Water.jpg",
-      "slug": "water"
+      "slug": "water",
+      "rewards": []
     }
   },
   {
@@ -1342,14 +1692,15 @@
       "price": "2.15",
       "amount": 15,
       "image": "Fanta.jpg",
-      "slug": "fanta"
+      "slug": "fanta",
+      "rewards": []
     }
   },
   {
     "model": "orders.order",
     "pk": 1,
     "fields": {
-      "user": 2,
+      "user": null,
       "first_name": "stan",
       "last_name": "kore",
       "email": "st103@gmail.com",
@@ -1363,12 +1714,130 @@
     }
   },
   {
+    "model": "orders.order",
+    "pk": 2,
+    "fields": {
+      "user": null,
+      "first_name": "ffas",
+      "last_name": "fsadf",
+      "email": "sf@gmail.com",
+      "address": "mick",
+      "postal_code": "123",
+      "city": "mis",
+      "created": "2021-06-08T07:51:24.639Z",
+      "updated": "2021-06-08T07:51:24.639Z",
+      "paid": false,
+      "discount": 0
+    }
+  },
+  {
+    "model": "orders.order",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "first_name": "adf",
+      "last_name": "asdf",
+      "email": "asdf@gma.co",
+      "address": "asdf",
+      "postal_code": "13",
+      "city": "masf",
+      "created": "2021-06-08T07:58:04.433Z",
+      "updated": "2021-06-08T07:58:04.433Z",
+      "paid": false,
+      "discount": 0
+    }
+  },
+  {
+    "model": "orders.order",
+    "pk": 4,
+    "fields": {
+      "user": 1,
+      "first_name": "adf",
+      "last_name": "asdf",
+      "email": "asdf@fsals.sf",
+      "address": "adf",
+      "postal_code": "123",
+      "city": "fas",
+      "created": "2021-06-08T08:26:34.564Z",
+      "updated": "2021-06-08T08:26:34.564Z",
+      "paid": false,
+      "discount": 0
+    }
+  },
+  {
+    "model": "orders.order",
+    "pk": 5,
+    "fields": {
+      "user": 1,
+      "first_name": "asdf",
+      "last_name": "asf",
+      "email": "adf@fasf.sf",
+      "address": "asdf",
+      "postal_code": "123",
+      "city": "fsa",
+      "created": "2021-06-08T08:44:49.827Z",
+      "updated": "2021-06-08T08:44:49.827Z",
+      "paid": false,
+      "discount": 0
+    }
+  },
+  {
     "model": "orders.orderitem",
     "pk": 1,
     "fields": {
       "order": 1,
       "product": 5,
       "price": "0.99",
+      "quantity": 1
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 2,
+    "fields": {
+      "order": 2,
+      "product": 7,
+      "price": "2.30",
+      "quantity": 1
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 3,
+    "fields": {
+      "order": 3,
+      "product": 8,
+      "price": "2.00",
+      "quantity": 1
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 4,
+    "fields": {
+      "order": 4,
+      "product": 2,
+      "price": "4.99",
+      "quantity": 1
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 5,
+    "fields": {
+      "order": 4,
+      "product": 4,
+      "price": "1.99",
+      "quantity": 1
+    }
+  },
+  {
+    "model": "orders.orderitem",
+    "pk": 6,
+    "fields": {
+      "order": 5,
+      "product": 8,
+      "price": "2.00",
       "quantity": 1
     }
   }
