@@ -16,4 +16,5 @@
 6) Используя фреймворк **VanillaJS** написан таймер in Footer.
 7) Использован **css**.
 8) Использован **multithreading** *(main.views.get_login_page и др.)*.
-9) Разработан **Dockerfile** и **docker-compose**, использующий автоматически билдящийся образ stanislav3/web-app.
+9) Разработан **Dockerfile** и **docker-compose**, использующий автоматически билдящийся образ stanislav3/web-app
+   *(https://hub.docker.com/repository/docker/stanislav3/web-app)*.
