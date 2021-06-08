@@ -149,11 +149,12 @@ LOGGING = {
     },
     'handlers': {
         'console': {
+            'level': my_config.LOGGING_LEVEL,
             'class': 'logging.StreamHandler',
             'formatter': 'console'
         },
         'file': {
-            'level': 'DEBUG',
+            'level': my_config.LOGGING_LEVEL,
             'class': 'logging.FileHandler',
             'formatter': 'file',
             'filename': 'debug.log'
@@ -161,7 +162,7 @@ LOGGING = {
     },
     'loggers': {
         '': {
-            'level': 'DEBUG',
+            'level': my_config.LOGGING_LEVEL,
             'handlers': ['console', 'file']
         }
     }

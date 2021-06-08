@@ -40,7 +40,6 @@ def logout_user(request):
 def get_products_page(request):
     chosen_category = request.GET.get("category", "")
 
-    products = None
     if (chosen_category != ""):
         products = Product.objects.all().filter(category__slug=chosen_category)
     else:

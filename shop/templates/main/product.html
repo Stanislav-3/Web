@@ -58,6 +58,18 @@
                             <p>Price : {{ product.get_string_price }}</p>
                             <p>Amount : {{ product.amount }}</p>
                             <p>Description : {{ product.description }}</p>
+                            {% if product.rewards.count == 0 %}
+                                <p>Awards : There's no any awards </p>
+                            {% else %}
+                                <p>Awards :
+                                {% for reward in product.rewards.all %}
+                                    {{reward}}
+                                    {% if reward != product.rewards.last %}
+                                        ,
+                                    {% endif %}
+                                {% endfor %}
+                                </p>
+                            {% endif %}
                             {% if product.amount == 0 %}
                                 <p class="p-3 mb-2 bg-danger text-white">
                                     Out of stock!

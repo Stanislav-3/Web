@@ -20,9 +20,7 @@ def order_create(request):
             order.save()
             # 4) Move products to order items
             for item in cart:
-                OrderItem.objects.create(order=order,
-                                         product=item['product'],
-                                         price=item['price'],
+                OrderItem.objects.create(order=order,product=item['product'], price=item['price'],
                                          quantity=item['quantity'])
             # 5) Remove products from cart
             cart.clear()
@@ -49,8 +47,7 @@ def order_specific(request, order_id):
 
 
 def order_all(request):
-    orders = Order.objects.filter(user=request.user)                
-
+    orders = Order.objects.select_related('Product').get(user=request.user)
     context = {'orders': orders}
     return render(request, 'orders/orders.html', context)
 
