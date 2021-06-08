@@ -1,1820 +1,1088 @@
 [
   {
-    "model": "admin.logentry" ,
-    "pk": 1 ,
+    "model": "auth.permission",
+    "pk": 1,
     "fields": {
-      "action_time": "2021-06-02T14:13:21.556Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "1" ,
-      "object_repr": "Dairy" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 2 ,
-    "fields": {
-      "action_time": "2021-06-02T14:13:55.565Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "2" ,
-      "object_repr": "Sweets" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 3 ,
-    "fields": {
-      "action_time": "2021-06-02T14:14:02.662Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "3" ,
-      "object_repr": "Fruits" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 4 ,
-    "fields": {
-      "action_time": "2021-06-02T14:14:38.284Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "3" ,
-      "object_repr": "Fruits" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 5 ,
-    "fields": {
-      "action_time": "2021-06-02T14:14:50.776Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "5" ,
-      "object_repr": "Fruits" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 6 ,
-    "fields": {
-      "action_time": "2021-06-02T14:15:06.411Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "6" ,
-      "object_repr": "Grains" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 7 ,
-    "fields": {
-      "action_time": "2021-06-02T14:15:16.941Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "7" ,
-      "object_repr": "Processed" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 8 ,
-    "fields": {
-      "action_time": "2021-06-02T14:15:28.825Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "8" ,
-      "object_repr": "Meat" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 9 ,
-    "fields": {
-      "action_time": "2021-06-02T14:15:41.201Z" ,
-      "user": 1 ,
-      "content_type": 7 ,
-      "object_id": "9" ,
-      "object_repr": "Drinks" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 10 ,
-    "fields": {
-      "action_time": "2021-06-02T14:33:11.520Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "1" ,
-      "object_repr": "Cheese" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 11 ,
-    "fields": {
-      "action_time": "2021-06-02T14:34:04.857Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "2" ,
-      "object_repr": "Milk" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 12 ,
-    "fields": {
-      "action_time": "2021-06-02T14:34:54.561Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "3" ,
-      "object_repr": "Doughnut" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 13 ,
-    "fields": {
-      "action_time": "2021-06-02T14:35:45.605Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "4" ,
-      "object_repr": "Biscuits" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 14 ,
-    "fields": {
-      "action_time": "2021-06-02T14:36:12.338Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "5" ,
-      "object_repr": "Banana" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 15 ,
-    "fields": {
-      "action_time": "2021-06-02T14:37:27.004Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "6" ,
-      "object_repr": "Pineapple" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 16 ,
-    "fields": {
-      "action_time": "2021-06-02T14:38:53.417Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "7" ,
-      "object_repr": "Buckwheat" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 17 ,
-    "fields": {
-      "action_time": "2021-06-02T14:39:27.908Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "8" ,
-      "object_repr": "Rice" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 18 ,
-    "fields": {
-      "action_time": "2021-06-02T14:41:56.582Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "9" ,
-      "object_repr": "Pizza" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 19 ,
-    "fields": {
-      "action_time": "2021-06-02T14:42:47.433Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "10" ,
-      "object_repr": "Salad" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 20 ,
-    "fields": {
-      "action_time": "2021-06-02T14:43:43.404Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "11" ,
-      "object_repr": "Beef" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 21 ,
-    "fields": {
-      "action_time": "2021-06-02T14:44:10.357Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "12" ,
-      "object_repr": "Pork" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 22 ,
-    "fields": {
-      "action_time": "2021-06-02T14:44:53.095Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "13" ,
-      "object_repr": "Water" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 23 ,
-    "fields": {
-      "action_time": "2021-06-02T14:45:28.440Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "14" ,
-      "object_repr": "Fanta" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 24 ,
-    "fields": {
-      "action_time": "2021-06-02T15:58:47.885Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "1" ,
-      "object_repr": "Cheese" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 25 ,
-    "fields": {
-      "action_time": "2021-06-02T17:34:00.105Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "1" ,
-      "object_repr": "Cheese" ,
-      "action_flag": 2 ,
-      "change_message": "[]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 26 ,
-    "fields": {
-      "action_time": "2021-06-02T17:47:01.295Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "4" ,
-      "object_repr": "Biscuits" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 27 ,
-    "fields": {
-      "action_time": "2021-06-03T06:56:56.777Z" ,
-      "user": 1 ,
-      "content_type": 4 ,
-      "object_id": "2" ,
-      "object_repr": "Stan" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 28 ,
-    "fields": {
-      "action_time": "2021-06-07T19:55:24.917Z" ,
-      "user": 1 ,
-      "content_type": 4 ,
-      "object_id": "2" ,
-      "object_repr": "Stan" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 29 ,
-    "fields": {
-      "action_time": "2021-06-07T19:55:24.925Z" ,
-      "user": 1 ,
-      "content_type": 4 ,
-      "object_id": "3" ,
-      "object_repr": "abc" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 30 ,
-    "fields": {
-      "action_time": "2021-06-07T19:55:24.926Z" ,
-      "user": 1 ,
-      "content_type": 4 ,
-      "object_id": "4" ,
-      "object_repr": "asd" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 31 ,
-    "fields": {
-      "action_time": "2021-06-08T05:28:54.307Z" ,
-      "user": 1 ,
-      "content_type": 13 ,
-      "object_id": "1" ,
-      "object_repr": "ProductRewards object (1)" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 32 ,
-    "fields": {
-      "action_time": "2021-06-08T05:29:00.430Z" ,
-      "user": 1 ,
-      "content_type": 13 ,
-      "object_id": "2" ,
-      "object_repr": "ProductRewards object (2)" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 33 ,
-    "fields": {
-      "action_time": "2021-06-08T05:29:05.177Z" ,
-      "user": 1 ,
-      "content_type": 13 ,
-      "object_id": "3" ,
-      "object_repr": "ProductRewards object (3)" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 34 ,
-    "fields": {
-      "action_time": "2021-06-08T05:29:10.861Z" ,
-      "user": 1 ,
-      "content_type": 13 ,
-      "object_id": "4" ,
-      "object_repr": "ProductRewards object (4)" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 35 ,
-    "fields": {
-      "action_time": "2021-06-08T05:34:47.871Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "15" ,
-      "object_repr": "test_product" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 36 ,
-    "fields": {
-      "action_time": "2021-06-08T05:35:48.562Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "15" ,
-      "object_repr": "test_product" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 37 ,
-    "fields": {
-      "action_time": "2021-06-08T05:37:01.259Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "16" ,
-      "object_repr": "new" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 38 ,
-    "fields": {
-      "action_time": "2021-06-08T05:53:38.554Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "16" ,
-      "object_repr": "new" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 39 ,
-    "fields": {
-      "action_time": "2021-06-08T05:53:50.221Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "6" ,
-      "object_repr": "Pineapple" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 40 ,
-    "fields": {
-      "action_time": "2021-06-08T05:53:57.730Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "10" ,
-      "object_repr": "Salad" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 41 ,
-    "fields": {
-      "action_time": "2021-06-08T05:54:07.733Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "7" ,
-      "object_repr": "Buckwheat" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 42 ,
-    "fields": {
-      "action_time": "2021-06-08T05:55:30.539Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "5" ,
-      "object_repr": "Banana" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 43 ,
-    "fields": {
-      "action_time": "2021-06-08T05:55:38.189Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "3" ,
-      "object_repr": "Doughnut" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 44 ,
-    "fields": {
-      "action_time": "2021-06-08T05:59:24.368Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "2" ,
-      "object_repr": "Milk" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 45 ,
-    "fields": {
-      "action_time": "2021-06-08T06:00:02.964Z" ,
-      "user": 1 ,
-      "content_type": 9 ,
-      "object_id": "11" ,
-      "object_repr": "Beef" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Rewards\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 46 ,
-    "fields": {
-      "action_time": "2021-06-08T08:43:08.674Z" ,
-      "user": 1 ,
-      "content_type": 4 ,
-      "object_id": "5" ,
-      "object_repr": "Admin" ,
-      "action_flag": 1 ,
-      "change_message": "[{\"added\": {}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 47 ,
-    "fields": {
-      "action_time": "2021-06-08T10:35:59.719Z" ,
-      "user": 1 ,
-      "content_type": 4 ,
-      "object_id": "5" ,
-      "object_repr": "Admin" ,
-      "action_flag": 2 ,
-      "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 48 ,
-    "fields": {
-      "action_time": "2021-06-08T10:38:12.463Z" ,
-      "user": 1 ,
-      "content_type": 11 ,
-      "object_id": "5" ,
-      "object_repr": "Order 5" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 49 ,
-    "fields": {
-      "action_time": "2021-06-08T10:38:12.465Z" ,
-      "user": 1 ,
-      "content_type": 11 ,
-      "object_id": "4" ,
-      "object_repr": "Order 4" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 50 ,
-    "fields": {
-      "action_time": "2021-06-08T10:38:12.467Z" ,
-      "user": 1 ,
-      "content_type": 11 ,
-      "object_id": "3" ,
-      "object_repr": "Order 3" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 51 ,
-    "fields": {
-      "action_time": "2021-06-08T10:38:12.468Z" ,
-      "user": 1 ,
-      "content_type": 11 ,
-      "object_id": "2" ,
-      "object_repr": "Order 2" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "admin.logentry" ,
-    "pk": 52 ,
-    "fields": {
-      "action_time": "2021-06-08T10:38:12.469Z" ,
-      "user": 1 ,
-      "content_type": 11 ,
-      "object_id": "1" ,
-      "object_repr": "Order 1" ,
-      "action_flag": 3 ,
-      "change_message": ""
-    }
-  } ,
-  {
-    "model": "auth.permission" ,
-    "pk": 1 ,
-    "fields": {
-      "name": "Can add log entry" ,
-      "content_type": 1 ,
+      "name": "Can add log entry",
+      "content_type": 1,
       "codename": "add_logentry"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 2 ,
+    "model": "auth.permission",
+    "pk": 2,
     "fields": {
-      "name": "Can change log entry" ,
-      "content_type": 1 ,
+      "name": "Can change log entry",
+      "content_type": 1,
       "codename": "change_logentry"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 3 ,
+    "model": "auth.permission",
+    "pk": 3,
     "fields": {
-      "name": "Can delete log entry" ,
-      "content_type": 1 ,
+      "name": "Can delete log entry",
+      "content_type": 1,
       "codename": "delete_logentry"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 4 ,
+    "model": "auth.permission",
+    "pk": 4,
     "fields": {
-      "name": "Can view log entry" ,
-      "content_type": 1 ,
+      "name": "Can view log entry",
+      "content_type": 1,
       "codename": "view_logentry"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 5 ,
+    "model": "auth.permission",
+    "pk": 5,
     "fields": {
-      "name": "Can add permission" ,
-      "content_type": 2 ,
+      "name": "Can add permission",
+      "content_type": 2,
       "codename": "add_permission"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 6 ,
+    "model": "auth.permission",
+    "pk": 6,
     "fields": {
-      "name": "Can change permission" ,
-      "content_type": 2 ,
+      "name": "Can change permission",
+      "content_type": 2,
       "codename": "change_permission"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 7 ,
+    "model": "auth.permission",
+    "pk": 7,
     "fields": {
-      "name": "Can delete permission" ,
-      "content_type": 2 ,
+      "name": "Can delete permission",
+      "content_type": 2,
       "codename": "delete_permission"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 8 ,
+    "model": "auth.permission",
+    "pk": 8,
     "fields": {
-      "name": "Can view permission" ,
-      "content_type": 2 ,
+      "name": "Can view permission",
+      "content_type": 2,
       "codename": "view_permission"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 9 ,
+    "model": "auth.permission",
+    "pk": 9,
     "fields": {
-      "name": "Can add group" ,
-      "content_type": 3 ,
+      "name": "Can add group",
+      "content_type": 3,
       "codename": "add_group"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 10 ,
+    "model": "auth.permission",
+    "pk": 10,
     "fields": {
-      "name": "Can change group" ,
-      "content_type": 3 ,
+      "name": "Can change group",
+      "content_type": 3,
       "codename": "change_group"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 11 ,
+    "model": "auth.permission",
+    "pk": 11,
     "fields": {
-      "name": "Can delete group" ,
-      "content_type": 3 ,
+      "name": "Can delete group",
+      "content_type": 3,
       "codename": "delete_group"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 12 ,
+    "model": "auth.permission",
+    "pk": 12,
     "fields": {
-      "name": "Can view group" ,
-      "content_type": 3 ,
+      "name": "Can view group",
+      "content_type": 3,
       "codename": "view_group"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 13 ,
+    "model": "auth.permission",
+    "pk": 13,
     "fields": {
-      "name": "Can add user" ,
-      "content_type": 4 ,
+      "name": "Can add user",
+      "content_type": 4,
       "codename": "add_user"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 14 ,
+    "model": "auth.permission",
+    "pk": 14,
     "fields": {
-      "name": "Can change user" ,
-      "content_type": 4 ,
+      "name": "Can change user",
+      "content_type": 4,
       "codename": "change_user"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 15 ,
+    "model": "auth.permission",
+    "pk": 15,
     "fields": {
-      "name": "Can delete user" ,
-      "content_type": 4 ,
+      "name": "Can delete user",
+      "content_type": 4,
       "codename": "delete_user"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 16 ,
+    "model": "auth.permission",
+    "pk": 16,
     "fields": {
-      "name": "Can view user" ,
-      "content_type": 4 ,
+      "name": "Can view user",
+      "content_type": 4,
       "codename": "view_user"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 17 ,
+    "model": "auth.permission",
+    "pk": 17,
     "fields": {
-      "name": "Can add content type" ,
-      "content_type": 5 ,
+      "name": "Can add content type",
+      "content_type": 5,
       "codename": "add_contenttype"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 18 ,
+    "model": "auth.permission",
+    "pk": 18,
     "fields": {
-      "name": "Can change content type" ,
-      "content_type": 5 ,
+      "name": "Can change content type",
+      "content_type": 5,
       "codename": "change_contenttype"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 19 ,
+    "model": "auth.permission",
+    "pk": 19,
     "fields": {
-      "name": "Can delete content type" ,
-      "content_type": 5 ,
+      "name": "Can delete content type",
+      "content_type": 5,
       "codename": "delete_contenttype"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 20 ,
+    "model": "auth.permission",
+    "pk": 20,
     "fields": {
-      "name": "Can view content type" ,
-      "content_type": 5 ,
+      "name": "Can view content type",
+      "content_type": 5,
       "codename": "view_contenttype"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 21 ,
+    "model": "auth.permission",
+    "pk": 21,
     "fields": {
-      "name": "Can add session" ,
-      "content_type": 6 ,
+      "name": "Can add session",
+      "content_type": 6,
       "codename": "add_session"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 22 ,
+    "model": "auth.permission",
+    "pk": 22,
     "fields": {
-      "name": "Can change session" ,
-      "content_type": 6 ,
+      "name": "Can change session",
+      "content_type": 6,
       "codename": "change_session"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 23 ,
+    "model": "auth.permission",
+    "pk": 23,
     "fields": {
-      "name": "Can delete session" ,
-      "content_type": 6 ,
+      "name": "Can delete session",
+      "content_type": 6,
       "codename": "delete_session"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 24 ,
+    "model": "auth.permission",
+    "pk": 24,
     "fields": {
-      "name": "Can view session" ,
-      "content_type": 6 ,
+      "name": "Can view session",
+      "content_type": 6,
       "codename": "view_session"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 25 ,
+    "model": "auth.permission",
+    "pk": 25,
     "fields": {
-      "name": "Can add category" ,
-      "content_type": 7 ,
+      "name": "Can add category",
+      "content_type": 7,
       "codename": "add_category"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 26 ,
+    "model": "auth.permission",
+    "pk": 26,
     "fields": {
-      "name": "Can change category" ,
-      "content_type": 7 ,
+      "name": "Can change category",
+      "content_type": 7,
       "codename": "change_category"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 27 ,
+    "model": "auth.permission",
+    "pk": 27,
     "fields": {
-      "name": "Can delete category" ,
-      "content_type": 7 ,
+      "name": "Can delete category",
+      "content_type": 7,
       "codename": "delete_category"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 28 ,
+    "model": "auth.permission",
+    "pk": 28,
     "fields": {
-      "name": "Can view category" ,
-      "content_type": 7 ,
+      "name": "Can view category",
+      "content_type": 7,
       "codename": "view_category"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 29 ,
+    "model": "auth.permission",
+    "pk": 29,
     "fields": {
-      "name": "Can add profile" ,
-      "content_type": 8 ,
+      "name": "Can add profile",
+      "content_type": 8,
       "codename": "add_profile"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 30 ,
+    "model": "auth.permission",
+    "pk": 30,
     "fields": {
-      "name": "Can change profile" ,
-      "content_type": 8 ,
+      "name": "Can change profile",
+      "content_type": 8,
       "codename": "change_profile"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 31 ,
+    "model": "auth.permission",
+    "pk": 31,
     "fields": {
-      "name": "Can delete profile" ,
-      "content_type": 8 ,
+      "name": "Can delete profile",
+      "content_type": 8,
       "codename": "delete_profile"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 32 ,
+    "model": "auth.permission",
+    "pk": 32,
     "fields": {
-      "name": "Can view profile" ,
-      "content_type": 8 ,
+      "name": "Can view profile",
+      "content_type": 8,
       "codename": "view_profile"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 33 ,
+    "model": "auth.permission",
+    "pk": 33,
     "fields": {
-      "name": "Can add product" ,
-      "content_type": 9 ,
+      "name": "Can add product",
+      "content_type": 9,
       "codename": "add_product"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 34 ,
+    "model": "auth.permission",
+    "pk": 34,
     "fields": {
-      "name": "Can change product" ,
-      "content_type": 9 ,
+      "name": "Can change product",
+      "content_type": 9,
       "codename": "change_product"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 35 ,
+    "model": "auth.permission",
+    "pk": 35,
     "fields": {
-      "name": "Can delete product" ,
-      "content_type": 9 ,
+      "name": "Can delete product",
+      "content_type": 9,
       "codename": "delete_product"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 36 ,
+    "model": "auth.permission",
+    "pk": 36,
     "fields": {
-      "name": "Can view product" ,
-      "content_type": 9 ,
+      "name": "Can view product",
+      "content_type": 9,
       "codename": "view_product"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 37 ,
+    "model": "auth.permission",
+    "pk": 37,
     "fields": {
-      "name": "Can add wallet" ,
-      "content_type": 10 ,
+      "name": "Can add wallet",
+      "content_type": 10,
       "codename": "add_wallet"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 38 ,
+    "model": "auth.permission",
+    "pk": 38,
     "fields": {
-      "name": "Can change wallet" ,
-      "content_type": 10 ,
+      "name": "Can change wallet",
+      "content_type": 10,
       "codename": "change_wallet"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 39 ,
+    "model": "auth.permission",
+    "pk": 39,
     "fields": {
-      "name": "Can delete wallet" ,
-      "content_type": 10 ,
+      "name": "Can delete wallet",
+      "content_type": 10,
       "codename": "delete_wallet"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 40 ,
+    "model": "auth.permission",
+    "pk": 40,
     "fields": {
-      "name": "Can view wallet" ,
-      "content_type": 10 ,
+      "name": "Can view wallet",
+      "content_type": 10,
       "codename": "view_wallet"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 41 ,
+    "model": "auth.permission",
+    "pk": 41,
     "fields": {
-      "name": "Can add Order" ,
-      "content_type": 11 ,
+      "name": "Can add Order",
+      "content_type": 11,
       "codename": "add_order"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 42 ,
+    "model": "auth.permission",
+    "pk": 42,
     "fields": {
-      "name": "Can change Order" ,
-      "content_type": 11 ,
+      "name": "Can change Order",
+      "content_type": 11,
       "codename": "change_order"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 43 ,
+    "model": "auth.permission",
+    "pk": 43,
     "fields": {
-      "name": "Can delete Order" ,
-      "content_type": 11 ,
+      "name": "Can delete Order",
+      "content_type": 11,
       "codename": "delete_order"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 44 ,
+    "model": "auth.permission",
+    "pk": 44,
     "fields": {
-      "name": "Can view Order" ,
-      "content_type": 11 ,
+      "name": "Can view Order",
+      "content_type": 11,
       "codename": "view_order"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 45 ,
+    "model": "auth.permission",
+    "pk": 45,
     "fields": {
-      "name": "Can add order item" ,
-      "content_type": 12 ,
+      "name": "Can add order item",
+      "content_type": 12,
       "codename": "add_orderitem"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 46 ,
+    "model": "auth.permission",
+    "pk": 46,
     "fields": {
-      "name": "Can change order item" ,
-      "content_type": 12 ,
+      "name": "Can change order item",
+      "content_type": 12,
       "codename": "change_orderitem"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 47 ,
+    "model": "auth.permission",
+    "pk": 47,
     "fields": {
-      "name": "Can delete order item" ,
-      "content_type": 12 ,
+      "name": "Can delete order item",
+      "content_type": 12,
       "codename": "delete_orderitem"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 48 ,
+    "model": "auth.permission",
+    "pk": 48,
     "fields": {
-      "name": "Can view order item" ,
-      "content_type": 12 ,
+      "name": "Can view order item",
+      "content_type": 12,
       "codename": "view_orderitem"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 49 ,
+    "model": "auth.permission",
+    "pk": 49,
     "fields": {
-      "name": "Can add order item rewards" ,
-      "content_type": 13 ,
+      "name": "Can add order item rewards",
+      "content_type": 13,
       "codename": "add_orderitemrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 50 ,
+    "model": "auth.permission",
+    "pk": 50,
     "fields": {
-      "name": "Can change order item rewards" ,
-      "content_type": 13 ,
+      "name": "Can change order item rewards",
+      "content_type": 13,
       "codename": "change_orderitemrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 51 ,
+    "model": "auth.permission",
+    "pk": 51,
     "fields": {
-      "name": "Can delete order item rewards" ,
-      "content_type": 13 ,
+      "name": "Can delete order item rewards",
+      "content_type": 13,
       "codename": "delete_orderitemrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 52 ,
+    "model": "auth.permission",
+    "pk": 52,
     "fields": {
-      "name": "Can view order item rewards" ,
-      "content_type": 13 ,
+      "name": "Can view order item rewards",
+      "content_type": 13,
       "codename": "view_orderitemrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 53 ,
+    "model": "auth.permission",
+    "pk": 53,
     "fields": {
-      "name": "Can add product rewards" ,
-      "content_type": 13 ,
+      "name": "Can add product rewards",
+      "content_type": 13,
       "codename": "add_productrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 54 ,
+    "model": "auth.permission",
+    "pk": 54,
     "fields": {
-      "name": "Can change product rewards" ,
-      "content_type": 13 ,
+      "name": "Can change product rewards",
+      "content_type": 13,
       "codename": "change_productrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 55 ,
+    "model": "auth.permission",
+    "pk": 55,
     "fields": {
-      "name": "Can delete product rewards" ,
-      "content_type": 13 ,
+      "name": "Can delete product rewards",
+      "content_type": 13,
       "codename": "delete_productrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 56 ,
+    "model": "auth.permission",
+    "pk": 56,
     "fields": {
-      "name": "Can view product rewards" ,
-      "content_type": 13 ,
+      "name": "Can view product rewards",
+      "content_type": 13,
       "codename": "view_productrewards"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 57 ,
+    "model": "auth.permission",
+    "pk": 57,
     "fields": {
-      "name": "Can add product reward" ,
-      "content_type": 13 ,
+      "name": "Can add product reward",
+      "content_type": 13,
       "codename": "add_productreward"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 58 ,
+    "model": "auth.permission",
+    "pk": 58,
     "fields": {
-      "name": "Can change product reward" ,
-      "content_type": 13 ,
+      "name": "Can change product reward",
+      "content_type": 13,
       "codename": "change_productreward"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 59 ,
+    "model": "auth.permission",
+    "pk": 59,
     "fields": {
-      "name": "Can delete product reward" ,
-      "content_type": 13 ,
+      "name": "Can delete product reward",
+      "content_type": 13,
       "codename": "delete_productreward"
     }
-  } ,
+  },
   {
-    "model": "auth.permission" ,
-    "pk": 60 ,
+    "model": "auth.permission",
+    "pk": 60,
     "fields": {
-      "name": "Can view product reward" ,
-      "content_type": 13 ,
+      "name": "Can view product reward",
+      "content_type": 13,
       "codename": "view_productreward"
     }
-  } ,
+  },
   {
-    "model": "auth.user" ,
-    "pk": 1 ,
+    "model": "contenttypes.contenttype",
+    "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$216000$betiFGzjkUd2$w2dhnC8t3YpfZFUmy05VfhHLueI6O59dLfjJhs6Hkf4=" ,
-      "last_login": "2021-06-08T10:35:41.848Z" ,
-      "is_superuser": true ,
-      "username": "Stanislav" ,
-      "first_name": "" ,
-      "last_name": "" ,
-      "email": "" ,
-      "is_staff": true ,
-      "is_active": true ,
-      "date_joined": "2021-06-01T13:40:14.785Z" ,
-      "groups": [ ] ,
-      "user_permissions": [ ]
-    }
-  } ,
-  {
-    "model": "auth.user" ,
-    "pk": 5 ,
-    "fields": {
-      "password": "pbkdf2_sha256$216000$PpzD6QTEHbLS$wIB0+CnE6CIWW+ycp2kT6UW59hix66wA0s4mMy7ihKw=" ,
-      "last_login": null ,
-      "is_superuser": true ,
-      "username": "Admin" ,
-      "first_name": "" ,
-      "last_name": "" ,
-      "email": "" ,
-      "is_staff": true ,
-      "is_active": true ,
-      "date_joined": "2021-06-08T08:43:08Z" ,
-      "groups": [ ] ,
-      "user_permissions": [ ]
-    }
-  } ,
-  {
-    "model": "contenttypes.contenttype" ,
-    "pk": 1 ,
-    "fields": {
-      "app_label": "admin" ,
+      "app_label": "admin",
       "model": "logentry"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 2 ,
+    "model": "contenttypes.contenttype",
+    "pk": 2,
     "fields": {
-      "app_label": "auth" ,
+      "app_label": "auth",
       "model": "permission"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 3 ,
+    "model": "contenttypes.contenttype",
+    "pk": 3,
     "fields": {
-      "app_label": "auth" ,
+      "app_label": "auth",
       "model": "group"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 4 ,
+    "model": "contenttypes.contenttype",
+    "pk": 4,
     "fields": {
-      "app_label": "auth" ,
+      "app_label": "auth",
       "model": "user"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 5 ,
+    "model": "contenttypes.contenttype",
+    "pk": 5,
     "fields": {
-      "app_label": "contenttypes" ,
+      "app_label": "contenttypes",
       "model": "contenttype"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 6 ,
+    "model": "contenttypes.contenttype",
+    "pk": 6,
     "fields": {
-      "app_label": "sessions" ,
+      "app_label": "sessions",
       "model": "session"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 7 ,
+    "model": "contenttypes.contenttype",
+    "pk": 7,
     "fields": {
-      "app_label": "main" ,
+      "app_label": "main",
       "model": "category"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 8 ,
+    "model": "contenttypes.contenttype",
+    "pk": 8,
     "fields": {
-      "app_label": "main" ,
+      "app_label": "main",
       "model": "profile"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 9 ,
+    "model": "contenttypes.contenttype",
+    "pk": 9,
     "fields": {
-      "app_label": "main" ,
+      "app_label": "main",
       "model": "product"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 10 ,
+    "model": "contenttypes.contenttype",
+    "pk": 10,
     "fields": {
-      "app_label": "main" ,
+      "app_label": "main",
       "model": "wallet"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 11 ,
+    "model": "contenttypes.contenttype",
+    "pk": 11,
     "fields": {
-      "app_label": "orders" ,
+      "app_label": "orders",
       "model": "order"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 12 ,
+    "model": "contenttypes.contenttype",
+    "pk": 12,
     "fields": {
-      "app_label": "orders" ,
+      "app_label": "orders",
       "model": "orderitem"
     }
-  } ,
+  },
   {
-    "model": "contenttypes.contenttype" ,
-    "pk": 13 ,
+    "model": "contenttypes.contenttype",
+    "pk": 13,
     "fields": {
-      "app_label": "main" ,
+      "app_label": "main",
       "model": "productreward"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "0n2raskc2lqkgt0q1d9iwgv7cxv510nb" ,
+    "model": "sessions.session",
+    "pk": "0n2raskc2lqkgt0q1d9iwgv7cxv510nb",
     "fields": {
-      "session_data": "e30:1lohB2:utZh5L0NVgCJUuJMPWxcpOpSWKr5mXLe3XdQmO8EeaQ" ,
+      "session_data": "e30:1lohB2:utZh5L0NVgCJUuJMPWxcpOpSWKr5mXLe3XdQmO8EeaQ",
       "expire_date": "2021-06-17T06:50:00.852Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "3d2ffrq96796g9dbn5yovylmbpt05i5g" ,
+    "model": "sessions.session",
+    "pk": "3d2ffrq96796g9dbn5yovylmbpt05i5g",
     "fields": {
-      "session_data": "e30:1loKWt:vHgXbUJZ1Auedewa0CYd7yD1TCVFwQeEOUjRIq4J8BE" ,
+      "session_data": "e30:1loKWt:vHgXbUJZ1Auedewa0CYd7yD1TCVFwQeEOUjRIq4J8BE",
       "expire_date": "2021-06-16T06:39:03.613Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "62wzl1jfyrs71h6fv0tgf6fuja0mg94n" ,
+    "model": "sessions.session",
+    "pk": "69piaxknzw0bpz6abhy038kbuqd428ow",
     "fields": {
-      "session_data": ".eJxVjDEOgzAQBP9ydWQZg22gTJ83WHfnc0wSgYShQvw9INHQ7szsBozzAv22PyDguuSwFpnDEKGHCm4bIX9lPEH84PieFE_jMg-kTkVdtKjXFOX3vNzbQcaSj9qgZ6pTpMqKd-gjO-9d11rjyGgtWmydqDNJGt0xtciHzFVqjPVRtIP9DzxCO7A:1lqZ7u:ZTx-6AuxCW17PQ9mdJruKBJzZDzjxzHzY8JFz6Vwv4s" ,
-      "expire_date": "2021-06-22T10:38:30.570Z"
-    }
-  } ,
-  {
-    "model": "sessions.session" ,
-    "pk": "69piaxknzw0bpz6abhy038kbuqd428ow" ,
-    "fields": {
-      "session_data": "e30:1loR4D:lYpWj_mC5goI1nI9xcsOQXb7MFt6Gu-QS8wfHZzuhAo" ,
+      "session_data": "e30:1loR4D:lYpWj_mC5goI1nI9xcsOQXb7MFt6Gu-QS8wfHZzuhAo",
       "expire_date": "2021-06-16T13:37:53.408Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "6viflt08feng5v30yoxj9xiv2ruo7qzz" ,
+    "model": "sessions.session",
+    "pk": "6viflt08feng5v30yoxj9xiv2ruo7qzz",
     "fields": {
-      "session_data": ".eJxVjEEOwiAQRe_C2hCgBYpL9z0DmRkGqRqalHZlvLtt0oVu_3vvv0WEbS1xa7zEKYmr0OLyuyHQk-sB0gPqfZY013WZUB6KPGmT45z4dTvdv4MCrey1AU_Y5YTasnfgEznvXRiscWiUYsW2yxhM5l4FwgFol0nn3lifWDnx-QL07zhk:1loS8t:HwwDg1FINImBPJ6wNm9CxN-RtFAFQaAftN6F8ktO2U0" ,
+      "session_data": ".eJxVjEEOwiAQRe_C2hCgBYpL9z0DmRkGqRqalHZlvLtt0oVu_3vvv0WEbS1xa7zEKYmr0OLyuyHQk-sB0gPqfZY013WZUB6KPGmT45z4dTvdv4MCrey1AU_Y5YTasnfgEznvXRiscWiUYsW2yxhM5l4FwgFol0nn3lifWDnx-QL07zhk:1loS8t:HwwDg1FINImBPJ6wNm9CxN-RtFAFQaAftN6F8ktO2U0",
       "expire_date": "2021-06-16T14:46:47.675Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "di64mf09m6jjsnx4acm4mrkgrootlmjp" ,
+    "model": "sessions.session",
+    "pk": "di64mf09m6jjsnx4acm4mrkgrootlmjp",
     "fields": {
-      "session_data": "e30:1loK5h:URvlxE-DiC1XZGIj3IZ9mJo-u5wX6qUOLJ_2ho5ep-E" ,
+      "session_data": "e30:1loK5h:URvlxE-DiC1XZGIj3IZ9mJo-u5wX6qUOLJ_2ho5ep-E",
       "expire_date": "2021-06-16T06:10:57.277Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "ed7gsfgnofqhmcx399adntr09psg5rbz" ,
+    "model": "sessions.session",
+    "pk": "ed7gsfgnofqhmcx399adntr09psg5rbz",
     "fields": {
-      "session_data": "e30:1lohFD:ZK4E6p_j3RUmqVqECNSZWMiXGkuA8mjrO3PJXEmM-I4" ,
+      "session_data": "e30:1lohFD:ZK4E6p_j3RUmqVqECNSZWMiXGkuA8mjrO3PJXEmM-I4",
       "expire_date": "2021-06-17T06:54:19.726Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "ig0zhjn4lqqxisa50kra8hgiihfm2i41" ,
+    "model": "sessions.session",
+    "pk": "ig0zhjn4lqqxisa50kra8hgiihfm2i41",
     "fields": {
-      "session_data": "e30:1loRJW:72BuCOnrgpS8hvwX9at_zwYyvh17nHc12zFJEbP47Ag" ,
+      "session_data": "e30:1loRJW:72BuCOnrgpS8hvwX9at_zwYyvh17nHc12zFJEbP47Ag",
       "expire_date": "2021-06-16T13:53:42.263Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "jvp4ym24we59hg1xao65luj0u9yi2b5w" ,
+    "model": "sessions.session",
+    "pk": "jvp4ym24we59hg1xao65luj0u9yi2b5w",
     "fields": {
-      "session_data": "e30:1lohAP:P72Y0AJ2N1G_grD6URVCbWC0eCfzRBmg09ZwXL1O0mo" ,
+      "session_data": "e30:1lohAP:P72Y0AJ2N1G_grD6URVCbWC0eCfzRBmg09ZwXL1O0mo",
       "expire_date": "2021-06-17T06:49:21.173Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "lx5k9ue3imc3r6o2sbs1brd8va2ee8u3" ,
+    "model": "sessions.session",
+    "pk": "lx5k9ue3imc3r6o2sbs1brd8va2ee8u3",
     "fields": {
-      "session_data": ".eJxVjEEOgyAQRe_CuiGIAuKy-56BzAxDtW0wEVwZ715NXLTb_95_mwiw1jGshZcwRTGIRtx-NwR6cz5BfEF-zpLmXJcJ5anIixb5mCN_7pf7FxihjMdbgyNsU8TGsLPgIlnnrO-NtqiVYsWmTeh14k55wh7okKlJnTYusrJHlGCpYtj2_Qs3sDuw:1lqXgX:LN3v4y9Amj2dLmQgBJzRWVzaE4BSDUjrmP_h_LY1YZU" ,
+      "session_data": ".eJxVjEEOgyAQRe_CuiGIAuKy-56BzAxDtW0wEVwZ715NXLTb_95_mwiw1jGshZcwRTGIRtx-NwR6cz5BfEF-zpLmXJcJ5anIixb5mCN_7pf7FxihjMdbgyNsU8TGsLPgIlnnrO-NtqiVYsWmTeh14k55wh7okKlJnTYusrJHlGCpYtj2_Qs3sDuw:1lqXgX:LN3v4y9Amj2dLmQgBJzRWVzaE4BSDUjrmP_h_LY1YZU",
       "expire_date": "2021-06-22T09:06:09.770Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "nxi2ar2llqtmmlaa561rg702d9416eu1" ,
+    "model": "sessions.session",
+    "pk": "mkganv2nxqu6e3c430z2evi1dwypzlch",
     "fields": {
-      "session_data": "e30:1loRIp:LLbj91vHAH8kexmGfNT0q4BGkyukEIoUXGYw7oEY46Y" ,
+      "session_data": ".eJxVjEEOgyAQRe_CuiECI6jL7j0DGYah2DaaoK6Md29JXLTb_95_h_C4b9nvKxc_RTGIVtx-t4D04rmC-MT5sUha5q1MQVZFXnSV4xL5fb_cv0DGNX_fPQCRc-S0Na5vDIFWhIRgW2ssqR5iSBpih6kjSBzYMrGJrBQ0wdYoYdnEcJznBx-vO7I:1lqZkn:LipKojSEscmsQXWqkL5GgU7sP41Gsx1S_yk5BCJfCjg",
+      "expire_date": "2021-06-22T11:18:41.072Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "nxi2ar2llqtmmlaa561rg702d9416eu1",
+    "fields": {
+      "session_data": "e30:1loRIp:LLbj91vHAH8kexmGfNT0q4BGkyukEIoUXGYw7oEY46Y",
       "expire_date": "2021-06-16T13:52:59.022Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "o5mskpzc4qsg3snj3cye49x39czzinnm" ,
+    "model": "sessions.session",
+    "pk": "o5mskpzc4qsg3snj3cye49x39czzinnm",
     "fields": {
-      "session_data": "e30:1loRKL:dtnwLioC-W4-iKicY7iKjLtyD9oGg41tQgeS8xwWcn4" ,
+      "session_data": "e30:1loRKL:dtnwLioC-W4-iKicY7iKjLtyD9oGg41tQgeS8xwWcn4",
       "expire_date": "2021-06-16T13:54:33.768Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "pwv41v2y4az2vyxif3i049wjfvk610jw" ,
+    "model": "sessions.session",
+    "pk": "pwv41v2y4az2vyxif3i049wjfvk610jw",
     "fields": {
-      "session_data": "e30:1loh9Z:skoQ4Aiet0NSouOfgIv7p4LzfJ9Os8LebiUS7eIDrQs" ,
+      "session_data": "e30:1loh9Z:skoQ4Aiet0NSouOfgIv7p4LzfJ9Os8LebiUS7eIDrQs",
       "expire_date": "2021-06-17T06:48:29.796Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "s5lwps30ff0osu2exatbes11wwnefoi6" ,
+    "model": "sessions.session",
+    "pk": "s5lwps30ff0osu2exatbes11wwnefoi6",
     "fields": {
-      "session_data": "e30:1loK5y:mrlsLPM_P0LRBPBh7ssXTB962VQNsVvIVJ4rZA3n7ZI" ,
+      "session_data": "e30:1loK5y:mrlsLPM_P0LRBPBh7ssXTB962VQNsVvIVJ4rZA3n7ZI",
       "expire_date": "2021-06-16T06:11:14.084Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "sl5krqbynf3oooq46mqcoj7pim1hitrk" ,
+    "model": "sessions.session",
+    "pk": "sl5krqbynf3oooq46mqcoj7pim1hitrk",
     "fields": {
-      "session_data": "eyJjYXJ0Ijp7fX0:1lq1Jr:MYw2Xkxd8CcCbN3IKc39h0tDLK_W7C8CDRFo3DUSpK8" ,
+      "session_data": "eyJjYXJ0Ijp7fX0:1lq1Jr:MYw2Xkxd8CcCbN3IKc39h0tDLK_W7C8CDRFo3DUSpK8",
       "expire_date": "2021-06-20T22:32:35.238Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "t65u45pl2giz4un5zxv3krb5xg6ruy0m" ,
+    "model": "sessions.session",
+    "pk": "t65u45pl2giz4un5zxv3krb5xg6ruy0m",
     "fields": {
-      "session_data": "eyJjYXJ0Ijp7fX0:1lq1bq:-BbqMvsEvwR7a9llJxwvygOwzkK1PGjxnbi0lkrsjzg" ,
+      "session_data": "eyJjYXJ0Ijp7fX0:1lq1bq:-BbqMvsEvwR7a9llJxwvygOwzkK1PGjxnbi0lkrsjzg",
       "expire_date": "2021-06-20T22:51:10.864Z"
     }
-  } ,
+  },
   {
-    "model": "sessions.session" ,
-    "pk": "x71v590dl1bvmy3t3arrbzinv0qx9w4y" ,
+    "model": "sessions.session",
+    "pk": "x71v590dl1bvmy3t3arrbzinv0qx9w4y",
     "fields": {
-      "session_data": "e30:1lohA8:hmaZyIvxrtjltusEH82X62CesRlGrVvWxqInHNoAL9c" ,
+      "session_data": "e30:1lohA8:hmaZyIvxrtjltusEH82X62CesRlGrVvWxqInHNoAL9c",
       "expire_date": "2021-06-17T06:49:04.371Z"
     }
-  } ,
+  },
   {
-    "model": "main.profile" ,
-    "pk": 1 ,
+    "model": "main.category",
+    "pk": 1,
     "fields": {
-      "user": 1 ,
-      "phone_number": "" ,
-      "address": "" ,
-      "email_is_verified": false
-    }
-  } ,
-  {
-    "model": "main.profile" ,
-    "pk": 5 ,
-    "fields": {
-      "user": 5 ,
-      "phone_number": null ,
-      "address": null ,
-      "email_is_verified": false
-    }
-  } ,
-  {
-    "model": "main.category" ,
-    "pk": 1 ,
-    "fields": {
-      "title": "Dairy" ,
-      "image": "Dairy.jpg" ,
+      "title": "Dairy",
+      "image": "Dairy.jpg",
       "slug": "dairy"
     }
-  } ,
+  },
   {
-    "model": "main.category" ,
-    "pk": 2 ,
+    "model": "main.category",
+    "pk": 2,
     "fields": {
-      "title": "Sweets" ,
-      "image": "Sweets.jpg" ,
+      "title": "Sweets",
+      "image": "Sweets.jpg",
       "slug": "sweets"
     }
-  } ,
+  },
   {
-    "model": "main.category" ,
-    "pk": 5 ,
+    "model": "main.category",
+    "pk": 5,
     "fields": {
-      "title": "Fruits" ,
-      "image": "Fruits_JnL8Tyd.jpg" ,
+      "title": "Fruits",
+      "image": "Fruits_JnL8Tyd.jpg",
       "slug": "fruits"
     }
-  } ,
+  },
   {
-    "model": "main.category" ,
-    "pk": 6 ,
+    "model": "main.category",
+    "pk": 6,
     "fields": {
-      "title": "Grains" ,
-      "image": "Grains.jpg" ,
+      "title": "Grains",
+      "image": "Grains.jpg",
       "slug": "grains"
     }
-  } ,
+  },
   {
-    "model": "main.category" ,
-    "pk": 7 ,
+    "model": "main.category",
+    "pk": 7,
     "fields": {
-      "title": "Processed" ,
-      "image": "Processed.jpg" ,
+      "title": "Processed",
+      "image": "Processed.jpg",
       "slug": "processed"
     }
-  } ,
+  },
   {
-    "model": "main.category" ,
-    "pk": 8 ,
+    "model": "main.category",
+    "pk": 8,
     "fields": {
-      "title": "Meat" ,
-      "image": "Meat.jpg" ,
+      "title": "Meat",
+      "image": "Meat.jpg",
       "slug": "meat"
     }
-  } ,
+  },
   {
-    "model": "main.category" ,
-    "pk": 9 ,
+    "model": "main.category",
+    "pk": 9,
     "fields": {
-      "title": "Drinks" ,
-      "image": "Drinks.jpg" ,
+      "title": "Drinks",
+      "image": "Drinks.jpg",
       "slug": "drinks"
     }
-  } ,
+  },
   {
-    "model": "main.productreward" ,
-    "pk": 1 ,
+    "model": "main.productreward",
+    "pk": 1,
     "fields": {
       "tag": "2018-best"
     }
-  } ,
+  },
   {
-    "model": "main.productreward" ,
-    "pk": 2 ,
+    "model": "main.productreward",
+    "pk": 2,
     "fields": {
       "tag": "2019-best"
     }
-  } ,
+  },
   {
-    "model": "main.productreward" ,
-    "pk": 3 ,
+    "model": "main.productreward",
+    "pk": 3,
     "fields": {
       "tag": "2020-best"
     }
-  } ,
+  },
   {
-    "model": "main.productreward" ,
-    "pk": 4 ,
+    "model": "main.productreward",
+    "pk": 4,
     "fields": {
       "tag": "2021-best"
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 1 ,
+    "model": "main.product",
+    "pk": 1,
     "fields": {
-      "title": "Cheese" ,
-      "description": "The best cheese ever." ,
-      "category": 1 ,
-      "price": "6.99" ,
-      "amount": 12 ,
-      "image": "Cheese.jpeg" ,
-      "slug": "cheese" ,
+      "title": "Cheese",
+      "description": "The best cheese ever.",
+      "category": 1,
+      "price": "6.99",
+      "amount": 12,
+      "image": "Cheese.jpeg",
+      "slug": "cheese",
       "rewards": [ ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 2 ,
+    "model": "main.product",
+    "pk": 2,
     "fields": {
-      "title": "Milk" ,
-      "description": "From happiest cows" ,
-      "category": 1 ,
-      "price": "4.99" ,
-      "amount": 12 ,
-      "image": "Milk.jpg" ,
-      "slug": "milk" ,
+      "title": "Milk",
+      "description": "From happiest cows",
+      "category": 1,
+      "price": "4.99",
+      "amount": 12,
+      "image": "Milk.jpg",
+      "slug": "milk",
       "rewards": [
-        2 ,
+        2,
         4
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 3 ,
+    "model": "main.product",
+    "pk": 3,
     "fields": {
-      "title": "Doughnut" ,
-      "description": "Just try it" ,
-      "category": 2 ,
-      "price": "2.99" ,
-      "amount": 11 ,
-      "image": "Doughnut.jpg" ,
-      "slug": "doughnut" ,
+      "title": "Doughnut",
+      "description": "Just try it",
+      "category": 2,
+      "price": "2.99",
+      "amount": 11,
+      "image": "Doughnut.jpg",
+      "slug": "doughnut",
       "rewards": [
         1
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 4 ,
+    "model": "main.product",
+    "pk": 4,
     "fields": {
-      "title": "Biscuits" ,
-      "description": "Look at this beautiful circles!" ,
-      "category": 2 ,
-      "price": "1.99" ,
-      "amount": 15 ,
-      "image": "Biscuits.jpg" ,
-      "slug": "biscuits" ,
+      "title": "Biscuits",
+      "description": "Look at this beautiful circles!",
+      "category": 2,
+      "price": "1.99",
+      "amount": 15,
+      "image": "Biscuits.jpg",
+      "slug": "biscuits",
       "rewards": [ ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 5 ,
+    "model": "main.product",
+    "pk": 5,
     "fields": {
-      "title": "Banana" ,
-      "description": "From Africa with love" ,
-      "category": 5 ,
-      "price": "0.99" ,
-      "amount": 7 ,
-      "image": "Banana.jpg" ,
-      "slug": "banana" ,
+      "title": "Banana",
+      "description": "From Africa with love",
+      "category": 5,
+      "price": "0.99",
+      "amount": 7,
+      "image": "Banana.jpg",
+      "slug": "banana",
       "rewards": [
-        1 ,
+        1,
         2
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 6 ,
+    "model": "main.product",
+    "pk": 6,
     "fields": {
-      "title": "Pineapple" ,
-      "description": "From Spain" ,
-      "category": 5 ,
-      "price": "1.50" ,
-      "amount": 6 ,
-      "image": "Pineapple.jpg" ,
-      "slug": "pineapple" ,
+      "title": "Pineapple",
+      "description": "From Spain",
+      "category": 5,
+      "price": "1.50",
+      "amount": 6,
+      "image": "Pineapple.jpg",
+      "slug": "pineapple",
       "rewards": [
-        1 ,
+        1,
         3
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 7 ,
+    "model": "main.product",
+    "pk": 7,
     "fields": {
-      "title": "Buckwheat" ,
-      "description": "Yammy" ,
-      "category": 6 ,
-      "price": "2.30" ,
-      "amount": 11 ,
-      "image": "Buckwheat.jpg" ,
-      "slug": "buckwheat" ,
+      "title": "Buckwheat",
+      "description": "Yammy",
+      "category": 6,
+      "price": "2.30",
+      "amount": 11,
+      "image": "Buckwheat.jpg",
+      "slug": "buckwheat",
       "rewards": [
-        1 ,
-        2 ,
-        3 ,
+        1,
+        2,
+        3,
         4
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 8 ,
+    "model": "main.product",
+    "pk": 8,
     "fields": {
-      "title": "Rice" ,
-      "description": "From China" ,
-      "category": 6 ,
-      "price": "2.00" ,
-      "amount": 6 ,
-      "image": "Rice.jpg" ,
-      "slug": "rice" ,
+      "title": "Rice",
+      "description": "From China",
+      "category": 6,
+      "price": "2.00",
+      "amount": 6,
+      "image": "Rice.jpg",
+      "slug": "rice",
       "rewards": [ ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 9 ,
+    "model": "main.product",
+    "pk": 9,
     "fields": {
-      "title": "Pizza" ,
-      "description": "Ready-to-cook" ,
-      "category": 7 ,
-      "price": "4.80" ,
-      "amount": 6 ,
-      "image": "Pizza.jpg" ,
-      "slug": "pizza" ,
+      "title": "Pizza",
+      "description": "Ready-to-cook",
+      "category": 7,
+      "price": "4.80",
+      "amount": 6,
+      "image": "Pizza.jpg",
+      "slug": "pizza",
       "rewards": [ ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 10 ,
+    "model": "main.product",
+    "pk": 10,
     "fields": {
-      "title": "Salad" ,
-      "description": "The freshest bowl" ,
-      "category": 7 ,
-      "price": "6.50" ,
-      "amount": 6 ,
-      "image": "Salad.jpg" ,
-      "slug": "salad" ,
+      "title": "Salad",
+      "description": "The freshest bowl",
+      "category": 7,
+      "price": "6.50",
+      "amount": 6,
+      "image": "Salad.jpg",
+      "slug": "salad",
       "rewards": [
         1
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 11 ,
+    "model": "main.product",
+    "pk": 11,
     "fields": {
-      "title": "Beef" ,
-      "description": "Good quality" ,
-      "category": 8 ,
-      "price": "5.60" ,
-      "amount": 8 ,
-      "image": "Beef.jpg" ,
-      "slug": "beef" ,
+      "title": "Beef",
+      "description": "Good quality",
+      "category": 8,
+      "price": "5.60",
+      "amount": 8,
+      "image": "Beef.jpg",
+      "slug": "beef",
       "rewards": [
         4
       ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 12 ,
+    "model": "main.product",
+    "pk": 12,
     "fields": {
-      "title": "Pork" ,
-      "description": "Best quality" ,
-      "category": 8 ,
-      "price": "6.40" ,
-      "amount": 7 ,
-      "image": "Pork.jpg" ,
-      "slug": "pork" ,
+      "title": "Pork",
+      "description": "Best quality",
+      "category": 8,
+      "price": "6.40",
+      "amount": 7,
+      "image": "Pork.jpg",
+      "slug": "pork",
       "rewards": [ ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 13 ,
+    "model": "main.product",
+    "pk": 13,
     "fields": {
-      "title": "Water" ,
-      "description": "From fresh springs" ,
-      "category": 9 ,
-      "price": "4.00" ,
-      "amount": 21 ,
-      "image": "Water.jpg" ,
-      "slug": "water" ,
+      "title": "Water",
+      "description": "From fresh springs",
+      "category": 9,
+      "price": "4.00",
+      "amount": 21,
+      "image": "Water.jpg",
+      "slug": "water",
       "rewards": [ ]
     }
-  } ,
+  },
   {
-    "model": "main.product" ,
-    "pk": 14 ,
+    "model": "main.product",
+    "pk": 14,
     "fields": {
-      "title": "Fanta" ,
-      "description": "Fresh orange taste" ,
-      "category": 9 ,
-      "price": "2.15" ,
-      "amount": 15 ,
-      "image": "Fanta.jpg" ,
-      "slug": "fanta" ,
+      "title": "Fanta",
+      "description": "Fresh orange taste",
+      "category": 9,
+      "price": "2.15",
+      "amount": 15,
+      "image": "Fanta.jpg",
+      "slug": "fanta",
       "rewards": [ ]
     }
   }
