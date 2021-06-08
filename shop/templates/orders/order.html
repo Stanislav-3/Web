@@ -21,7 +21,7 @@
 
     Order items : <hr>
     {% for order_item in order_items %}
-        Product : {{ order_item.title }} <br>
+        Product : {{ order_item.product.title }} <br>
         price : {{ order_item.price }}$ <br>
         quantity : {{ order_item.quantity }} <br>
         total product cost : {{ order_item.get_cost }}$ <br>

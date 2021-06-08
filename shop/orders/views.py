@@ -40,14 +40,14 @@ def order_create(request):
 
 def order_specific(request, order_id):
     order = get_object_or_404(Order, id=order_id)
-    order_items = OrderItem.objects.filter(order=order)
+    order_items = OrderItem.objects.filter(order=order).select_related('product')
     context = {'order': order, 'order_items': order_items}
 
     return render(request, 'orders/order.html', context)
 
 
 def order_all(request):
-    orders = Order.objects.select_related('Product').get(user=request.user)
+    orders = Order.objects.filter(user=request.user)
     context = {'orders': orders}
     return render(request, 'orders/orders.html', context)
 
