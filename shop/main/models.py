@@ -71,7 +71,7 @@ def validate_amount_of_product(value):
         return value
 
 
-class ProductRewards(models.Model):
+class ProductReward(models.Model):
     tag = models.CharField(max_length=50)
 
     def __str__(self):
@@ -86,7 +86,7 @@ class Product(models.Model):
     amount = models.PositiveIntegerField(default=5, validators=[validate_amount_of_product])
     image = models.ImageField(verbose_name="Image", default="default_img.jpg")
     slug = models.SlugField(default='', editable=False, max_length=50, unique=True)
-    rewards = models.ManyToManyField(ProductRewards, default='No awards')
+    rewards = models.ManyToManyField(ProductReward, default='No awards')
 
     @property
     def get_string_price(self):
