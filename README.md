@@ -1,6 +1,6 @@
 # Web
 ## How to run project:
-**Run:** $ git clone https://github.com/Stanislav-3/Web && cd Web && docker-compose up --build
+**Run:** $ git clone https://github.com/Stanislav-3/Web && cd Web && docker-compose up
 
 ## Testing
 Использована среда тестирования **pytest**, в случае форм также использован класс **TestCase**. Использованы *fixtures* и *parametrize*
