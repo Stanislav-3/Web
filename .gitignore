@@ -3,6 +3,7 @@
 .idea
 */.idea
 */venv
+*.pdf
 debug.log
 */debug.log
 */.coverage
